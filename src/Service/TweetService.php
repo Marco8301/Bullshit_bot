@@ -39,12 +39,13 @@ class TweetService
         "Ce Twitcher",
         "Ce touche-à-tout",
         "Ce bricoleur",
+        "Ce court métrage",
     ];
     private array $action = [
         "dessine des",
         "reproduit des",
         "peint des",
-        "détourne des photos de",
+        "détourne des photos des",
         "réimagine les",
         "parodie des",
         "fait des bandes-déssinées avec des",
@@ -52,12 +53,14 @@ class TweetService
         "revisite des",
         "sublime des",
         "reproduit en collage créatif des",
-        "peint sur des façade des portraits géants de",
+        "peint sur des façade des portraits géants des",
         "se maquille en",
         "se déguise en",
         "se grime en",
         "retouche des",
         "cuisine des plats reproduisant des",
+        "transforme des",
+        "recrée des",
     ];
     private array $character = [
         "personnages des Simpsons",
@@ -93,6 +96,9 @@ class TweetService
         "figures du féminisme",
         "figures historiques célèbres",
         "tableaux célèbres",
+        "objets du quotidien",
+        "sneakers cultes",
+        "voitures célèbres du cinéma"
     ];
     private array $media = [
         "avec ses excréments",
