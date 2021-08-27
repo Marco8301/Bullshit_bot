@@ -39,7 +39,12 @@ class TweetService
         "Ce Twitcher",
         "Ce touche-à-tout",
         "Ce bricoleur",
-        "Dans court métrage, il",
+        "Dans ce court métrage, il",
+        "Sur Instagram, il",
+        "Sur Instagram, elle",
+        "Sur Tiktok, il,",
+        "Sur Tiktok, elle,",
+        "A seulement 5 ans, il",
     ];
     private array $action = [
         "dessine des",
@@ -61,6 +66,8 @@ class TweetService
         "cuisine des plats reproduisant des",
         "transforme des",
         "recrée des",
+        "tricote des",
+        "tatoue des",
     ];
     private array $character = [
         "personnages des Simpsons",
@@ -98,7 +105,11 @@ class TweetService
         "tableaux célèbres",
         "objets du quotidien",
         "sneakers cultes",
-        "voitures célèbres du cinéma"
+        "voitures célèbres du cinéma",
+        "délicieuses pâtisseries",
+        "pochettes d'album célèbres",
+        "plantes tropicales somptueuses",
+        "affiches de films cultes"
     ];
     private array $media = [
         "avec ses excréments",
@@ -132,6 +143,7 @@ class TweetService
         "dans l'univers de Myazaki",
         "dans l'univers de Winnie l'ourson",
         "dans l'univers de Pixar",
+        "dans un univers onirique",
         "en pixel-art",
         "vivant dans l'ex-URSS",
         "en stop motion",
