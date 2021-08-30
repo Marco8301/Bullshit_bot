@@ -68,8 +68,11 @@ class TweetService
         "recrée des",
         "tricote des",
         "tatoue des",
+        "confectionne des",
+        "fabrique des",
     ];
     private array $character = [
+        "plaques d'égout",
         "personnages des Simpsons",
         "personnages de South Park",
         "personnages de Rick & Morty",
@@ -88,6 +91,7 @@ class TweetService
         "personnages de jeux vidéos",
         "personnages de films cultes",
         "princesses Disney",
+        "méchants cultes du cinéma",
         "figures mythologiques",
         "super-héros Marvel",
         "minions",
@@ -109,11 +113,12 @@ class TweetService
         "délicieuses pâtisseries",
         "pochettes d'album célèbres",
         "plantes tropicales somptueuses",
-        "affiches de films cultes"
+        "affiches de films cultes",
     ];
     private array $media = [
         "avec ses excréments",
         "avec son déjeuner",
+        "avec des masques FFP2",
         "avec du sable noir volcanique",
         "avec du marc de café équitable",
         "avec un handicap physique pour dénoncer le validisme",
@@ -139,11 +144,15 @@ class TweetService
         "pour apporter un message de paix",
         "pour célébrer le mois des fiertés",
         "pour alerter sur la santé mentale",
+        "pour alerter sur les abandons d'animaux",
         "dans l'univers de Tim Burton",
         "dans l'univers de Myazaki",
         "dans l'univers de Winnie l'ourson",
         "dans l'univers de Pixar",
         "dans un univers onirique",
+        "dans l'univers de Zelda",
+        "dans l'univers de Nintendo",
+        "dans l'univers de Harry Potter",
         "en pixel-art",
         "vivant dans l'ex-URSS",
         "en stop motion",
@@ -158,8 +167,6 @@ class TweetService
 
     public function generateTitle(): string
     {
-        return $this->randomize($this->subject)." ".$this->randomize($this->action)." ".$this->randomize(
-                $this->character
-            )." ".$this->randomize($this->media);
+        return $this->randomize($this->subject)." ".$this->randomize($this->action)." ".$this->randomize($this->character)." ".$this->randomize($this->media);
     }
 }
