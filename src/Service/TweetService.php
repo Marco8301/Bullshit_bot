@@ -45,6 +45,10 @@ class TweetService
         "Sur Tiktok, il,",
         "Sur Tiktok, elle,",
         "A seulement 5 ans, il",
+        "Ce jeune SDF",
+        "Après avoir passé 3 mois dans le coma, il",
+        "Ce génie de l'informatique",
+        "Pour son projet de fin d'étude, elle",
     ];
     private array $action = [
         "dessine des",
@@ -132,6 +136,7 @@ class TweetService
         "avec les graphismes de Minecraft",
         "avec les poils de son chien",
         "avec des déchets plastiques récupérés dans la nature",
+        "avec des objets chinés dans des brocantes",
         "de manière vintage",
         "de façon minimaliste",
         "façon cyberpunk",
@@ -167,6 +172,6 @@ class TweetService
 
     public function generateTitle(): string
     {
-        return $this->randomize($this->subject)." ".$this->randomize($this->action)." ".$this->randomize($this->character)." ".$this->randomize($this->media);
+        return $this->randomize($this->subject) . " " . $this->randomize($this->action) . " " . $this->randomize($this->character) . " " . $this->randomize($this->media);
     }
 }
